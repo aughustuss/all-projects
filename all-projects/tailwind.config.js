@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        title: ['Oswald', 'sans-serif']
+        title: ['Oswald', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
       },
       colors: {
         primary: '#060e33',

@@ -84,20 +84,20 @@ const App = () => {
           <p className='font-title text-3xl md:text-5xl  font-bold text-start text-offwhite'>PROJETOS</p>
           <p className='font-body text-sm md:text-base text-start text-offwhite font-bold'>Abaixo estão todos os meus projetos já feitos, listado em ordem de conclusão, onde o primeiro foi o último a ser concluído.</p>
         </div>
-        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2'>
+        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
           {projects.map((project, index) => (
-            <div key={index} className='border text-offwhite p-4 border-tertiary rounded-md bg-tertiary/30 min-h-[320px] max-h-fit w-full hover:shadow-md hover:shadow-tertiary transition duration-300 cursor-pointer'>
+            <div key={index} className='border text-offwhite p-4 border-tertiary rounded-md bg-primary min-h-[320px] max-h-fit w-full hover:shadow-md hover:shadow-tertiary transition duration-300 cursor-pointer'>
               <div className='flex flex-col justify-between h-full'>
-                <p className='font-title font-bold text-center text-2xl md:text-4xl'>{project.title}</p>
+                <p className='font-title font-bold text-center text-xl md:text-3xl'>{project.title}</p>
                 <img src={project.image} alt={project.title} className='h-[130px] w-full rounded-md object-cover' />
                 <div className='flex flex-col gap-2 w-full'>
                   <p className='text-xs text-start text-gray-400'>Categoria: {project.category}</p>
                   <div className='flex flex-row w-full gap-2 text-sm'>
-                    <a target='_blank' href={project.demo} className='w-full bg-tertiary/30 text-center border border-tertiary p-1 rounded-md hover:bg-tertiary transition duration-200'>Demo</a>
-                    <a target='_blank' href={project.code} className='w-full bg-tertiary/30 text-center border border-tertiary p-1 rounded-md hover:bg-tertiary transition duration-200'>Código</a>
+                    <a target='_blank' href={project.demo} className='w-full bg-tertiary/40 text-center border border-tertiary p-[6px] rounded-md hover:bg-tertiary transition duration-200'>Demo</a>
+                    <a target='_blank' href={project.code} className='w-full bg-tertiary/40 text-center border border-tertiary p-[6px] rounded-md hover:bg-tertiary transition duration-200'>Código</a>
                   </div>
                   {project.codeback && (
-                    <a target='_blank' href={project.codeback} className='w-full bg-tertiary/30 text-center border border-tertiary p-1 rounded-md hover:bg-tertiary transition duration-200 text-sm'>Código Back</a>
+                    <a target='_blank' href={project.codeback} className='w-full bg-tertiary/40 text-center border border-tertiary p-[6px] rounded-md hover:bg-tertiary transition duration-200 text-sm'>Código Back</a>
                   )}
                 </div>
               </div>

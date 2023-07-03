@@ -84,7 +84,7 @@ const App = () => {
           <p className='font-title text-3xl md:text-5xl  font-bold text-start text-offwhite'>PROJETOS</p>
           <p className='font-body text-sm md:text-base text-start text-offwhite font-bold'>Abaixo estão todos os meus projetos já feitos, listado em ordem de conclusão, onde o primeiro foi o último a ser concluído.</p>
         </div>
-        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
+        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 sm:gap-2 lg:gap-4'>
           {projects.map((project, index) => (
             <div key={index} className='border text-offwhite p-4 border-tertiary rounded-md bg-primary min-h-[320px] max-h-fit w-full hover:shadow-md hover:shadow-tertiary transition duration-300 cursor-pointer'>
               <div className='flex flex-col justify-between h-full'>

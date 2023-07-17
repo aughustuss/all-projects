@@ -23,7 +23,7 @@ const App = () => {
     {
       title: "AD's Burguer",
       category: 'Front-end/Back-end',
-      demo: 'https://projeto-foods-aughustuss.vercel.app/home',
+      demo: 'https://projeto-foods.vercel.app/home',
       code: 'https://github.com/aughustuss/proj-foods',
       codeback: 'https://github.com/aughustuss/UserAuth',
       image: ProjBurguer,

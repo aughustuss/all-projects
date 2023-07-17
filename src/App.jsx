@@ -7,10 +7,19 @@ import ProjEcommerce from './assets/projecommerce.jpeg';
 import ProjBlog from './assets/projblog.jpeg';
 import ProjClima from './assets/projclima.jpeg';
 import ProjLista from './assets/projlista.jpeg';
+import ProjBMS from './assets/projBMS.jpg'
 import SaeProj from './assets/saeproj.jpeg'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 const App = () => {
   const projects = [
+    {
+      title: "BookAD Management System",
+      category: 'Front-end/Back-end',
+      demo: 'https://projeto-livraria-ten.vercel.app/home',
+      code: 'https://github.com/aughustuss/projeto-livraria',
+      codeback: 'https://github.com/aughustuss/LibraryAPI',
+      image: ProjBMS
+    },
     {
       title: "AD's Burguer",
       category: 'Front-end/Back-end',
@@ -81,14 +90,14 @@ const App = () => {
     <>
       <main className='min-h-screen font-body flex flex-col gap-4 container px-2 md:px-0 pt-20 pb-6 mx-auto'>
         <div className='flex flex-col gap-y-4'>
-          <p className='font-title text-3xl md:text-5xl  font-bold text-start text-offwhite'>PROJETOS</p>
+          <p className='font-title text-3xl  font-bold text-start text-offwhite'>PROJETOS</p>
           <p className='font-body text-sm md:text-base text-start text-offwhite font-bold'>Abaixo estão todos os meus projetos já feitos, listado em ordem de conclusão, onde o primeiro foi o último a ser concluído.</p>
         </div>
-        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 sm:gap-2 lg:gap-4'>
+        <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1'>
           {projects.map((project, index) => (
-            <div key={index} className='border text-offwhite p-4 border-tertiary rounded-md bg-primary min-h-[320px] max-h-fit w-full hover:shadow-md hover:shadow-tertiary transition duration-300 cursor-pointer'>
+            <div key={index} className='shadow-md text-offwhite p-3 rounded-md bg-primary border border-tertiary min-h-[380px] max-h-fit w-full hover:shadow-md hover:shadow-tertiary transition duration-300 cursor-pointer'>
               <div className='flex flex-col justify-between h-full'>
-                <p className='font-title font-bold text-center text-xl md:text-3xl'>{project.title}</p>
+                <p className='font-title font-bold text-center text-xl '>{project.title}</p>
                 <img src={project.image} alt={project.title} className='h-[130px] w-full rounded-md object-cover' />
                 <div className='flex flex-col gap-2 w-full'>
                   <p className='text-xs text-start text-gray-400'>Categoria: {project.category}</p>
